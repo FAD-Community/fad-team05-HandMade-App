@@ -39,5 +39,11 @@
   "search": "البحث",
   "cart": "السلة",
   "wishlist": "المفضلة",
-  "profile": "حسابي"
+  "profile": "حسابي",
+  "seeAll": "عرض الكل",
+  "featuredCollection": "المجموعات المميزة",
+  "settings": "الإعدادات",
+  "language": "اللغة",
+  "darkMode": "الوضع الداكن",
+  "searchHInt": "ابحث في المنتجات اليدوية..."
 }
