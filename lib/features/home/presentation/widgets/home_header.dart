@@ -36,6 +36,13 @@ class HomeHeader extends StatelessWidget {
         Expanded(
           child: HeaderUserInfo(userName: userName, imageUrl: imageUrl),
         ),
+        HeaderActionButton(
+          icon: Icons.settings,
+          onTap: () {
+            Scaffold.of(context).openDrawer();
+          },
+        ),
+        SizedBox(width: 8.w),
         const HeaderActionButton(
           imagePath: 'assets/images/chat_image_icon.png',
         ),

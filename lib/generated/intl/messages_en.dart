@@ -22,61 +22,79 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "alreadyHaveAnAccount":
-            MessageLookupByLibrary.simpleMessage("Already have an account?"),
-        "cart": MessageLookupByLibrary.simpleMessage("Cart"),
-        "confirmPassword":
-            MessageLookupByLibrary.simpleMessage("Confirm Password"),
-        "crave": MessageLookupByLibrary.simpleMessage(
-            "Find unique handmade creations you\'ll love."),
-        "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
-        "discoverHandmade":
-            MessageLookupByLibrary.simpleMessage("Discover Handmade"),
-        "doNotReceiveOtp":
-            MessageLookupByLibrary.simpleMessage("Didn\'t receive the OTP?"),
-        "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
-        "explore": MessageLookupByLibrary.simpleMessage(
-            "Explore unique handmade products crafted with care by talented local artisans."),
-        "facebook": MessageLookupByLibrary.simpleMessage("Facebook"),
-        "follow": MessageLookupByLibrary.simpleMessage(
-            "Follow your favorite makers, connect with their work, and support small businesses."),
-        "forgotPassword":
-            MessageLookupByLibrary.simpleMessage("Forgot Password?"),
-        "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
-        "google": MessageLookupByLibrary.simpleMessage("Google"),
-        "home": MessageLookupByLibrary.simpleMessage("Home"),
-        "iAmBuyer": MessageLookupByLibrary.simpleMessage("I am a Buyer"),
-        "iAmSeller": MessageLookupByLibrary.simpleMessage("I am a Seller"),
-        "login": MessageLookupByLibrary.simpleMessage("Login"),
-        "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
-        "next": MessageLookupByLibrary.simpleMessage("Next"),
-        "orLogin": MessageLookupByLibrary.simpleMessage("or login with"),
-        "orSignUp": MessageLookupByLibrary.simpleMessage("or sign up with"),
-        "order": MessageLookupByLibrary.simpleMessage(
-            "Order handmade products with ease."),
-        "otpConfirmation":
-            MessageLookupByLibrary.simpleMessage("OTP Confirmation"),
-        "password": MessageLookupByLibrary.simpleMessage("Password"),
-        "please": MessageLookupByLibrary.simpleMessage(
-            "Please enter the code we have just sent to your phone."),
-        "pleaseWrite": MessageLookupByLibrary.simpleMessage(
-            "Please enter your new password."),
-        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
-        "resendCode": MessageLookupByLibrary.simpleMessage("Resend Code"),
-        "save": MessageLookupByLibrary.simpleMessage(
-            "Save your favorites, enjoy secure checkout, and receive handmade products with ease."),
-        "search": MessageLookupByLibrary.simpleMessage("Search"),
-        "shopWithConfidence":
-            MessageLookupByLibrary.simpleMessage("Shop with Confidence"),
-        "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
-        "skip": MessageLookupByLibrary.simpleMessage("Skip"),
-        "supportCreators":
-            MessageLookupByLibrary.simpleMessage("Support Creators"),
-        "usernameOrEmail":
-            MessageLookupByLibrary.simpleMessage("Username or Email"),
-        "verify": MessageLookupByLibrary.simpleMessage("Verify"),
-        "verifyCode": MessageLookupByLibrary.simpleMessage("Verify Code"),
-        "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
-        "wishlist": MessageLookupByLibrary.simpleMessage("Wishlist")
-      };
+    "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
+      "Already have an account?",
+    ),
+    "cart": MessageLookupByLibrary.simpleMessage("Cart"),
+    "confirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
+    "crave": MessageLookupByLibrary.simpleMessage(
+      "Find unique handmade creations you\'ll love.",
+    ),
+    "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+    "darkMode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
+    "discoverHandmade": MessageLookupByLibrary.simpleMessage(
+      "Discover Handmade",
+    ),
+    "doNotReceiveOtp": MessageLookupByLibrary.simpleMessage(
+      "Didn\'t receive the OTP?",
+    ),
+    "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
+    "explore": MessageLookupByLibrary.simpleMessage(
+      "Explore unique handmade products crafted with care by talented local artisans.",
+    ),
+    "facebook": MessageLookupByLibrary.simpleMessage("Facebook"),
+    "featuredCollection": MessageLookupByLibrary.simpleMessage(
+      "Featured Collection",
+    ),
+    "follow": MessageLookupByLibrary.simpleMessage(
+      "Follow your favorite makers, connect with their work, and support small businesses.",
+    ),
+    "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+    "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "google": MessageLookupByLibrary.simpleMessage("Google"),
+    "home": MessageLookupByLibrary.simpleMessage("Home"),
+    "iAmBuyer": MessageLookupByLibrary.simpleMessage("I am a Buyer"),
+    "iAmSeller": MessageLookupByLibrary.simpleMessage("I am a Seller"),
+    "language": MessageLookupByLibrary.simpleMessage("Language"),
+    "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
+    "next": MessageLookupByLibrary.simpleMessage("Next"),
+    "orLogin": MessageLookupByLibrary.simpleMessage("or login with"),
+    "orSignUp": MessageLookupByLibrary.simpleMessage("or sign up with"),
+    "order": MessageLookupByLibrary.simpleMessage(
+      "Order handmade products with ease.",
+    ),
+    "otpConfirmation": MessageLookupByLibrary.simpleMessage("OTP Confirmation"),
+    "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "please": MessageLookupByLibrary.simpleMessage(
+      "Please enter the code we have just sent to your phone.",
+    ),
+    "pleaseWrite": MessageLookupByLibrary.simpleMessage(
+      "Please enter your new password.",
+    ),
+    "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+    "resendCode": MessageLookupByLibrary.simpleMessage("Resend Code"),
+    "save": MessageLookupByLibrary.simpleMessage(
+      "Save your favorites, enjoy secure checkout, and receive handmade products with ease.",
+    ),
+    "search": MessageLookupByLibrary.simpleMessage("Search"),
+    "searchHInt": MessageLookupByLibrary.simpleMessage(
+      "Search handmade products...",
+    ),
+    "seeAll": MessageLookupByLibrary.simpleMessage("See All"),
+    "settings": MessageLookupByLibrary.simpleMessage("Settings"),
+    "shopWithConfidence": MessageLookupByLibrary.simpleMessage(
+      "Shop with Confidence",
+    ),
+    "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
+    "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+    "supportCreators": MessageLookupByLibrary.simpleMessage("Support Creators"),
+    "usernameOrEmail": MessageLookupByLibrary.simpleMessage(
+      "Username or Email",
+    ),
+    "verify": MessageLookupByLibrary.simpleMessage("Verify"),
+    "verifyCode": MessageLookupByLibrary.simpleMessage("Verify Code"),
+    "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
+    "wishlist": MessageLookupByLibrary.simpleMessage("Wishlist"),
+  };
 }

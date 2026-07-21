@@ -39,5 +39,11 @@
   "search": "Search",
   "cart": "Cart",
   "wishlist": "Wishlist",
-  "profile": "Profile"
+  "profile": "Profile",
+  "seeAll": "See All",
+  "featuredCollection": "Featured Collection",
+  "settings": "Settings",
+  "language": "Language",
+  "darkMode": "Dark Mode",
+  "searchHInt": "Search handmade products..."
 }

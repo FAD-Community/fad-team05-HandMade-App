@@ -3,11 +3,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hand_made/core/constants/app_colors.dart';
 
 class HeaderActionButton extends StatelessWidget {
-  final String imagePath;
+  final String? imagePath;
+  final IconData? icon;
   final int badgeCount;
   final VoidCallback? onTap;
 
-  const HeaderActionButton({super.key, required this.imagePath, this.badgeCount = 0, this.onTap});
+  const HeaderActionButton({super.key, this.imagePath, this.icon, this.badgeCount = 0, this.onTap})
+      : assert(imagePath != null || icon != null);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,9 @@ class HeaderActionButton extends StatelessWidget {
               shape: BoxShape.circle, 
               border: Border.all(color: AppColors.lightBorderColor, width: 0.8),
             ),
-            child: Image.asset(imagePath, width: 20.w, height: 20.w),
+            child: imagePath != null 
+                ? Image.asset(imagePath!, width: 20.w, height: 20.w)
+                : Icon(icon, size: 20.w, color: AppColors.userNameColor),
           ),
           if (badgeCount > 0)
             Positioned(
