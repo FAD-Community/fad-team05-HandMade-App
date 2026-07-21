@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل؟"),
+        "cart": MessageLookupByLibrary.simpleMessage("السلة"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
         "crave": MessageLookupByLibrary.simpleMessage(
@@ -44,6 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
         "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "google": MessageLookupByLibrary.simpleMessage("جوجل"),
+        "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "iAmBuyer": MessageLookupByLibrary.simpleMessage("أنا مشتري"),
         "iAmSeller": MessageLookupByLibrary.simpleMessage("أنا بائع"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
@@ -63,9 +65,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "يرجى إدخال الرمز الذي أرسلناه للتو إلى هاتفك."),
         "pleaseWrite": MessageLookupByLibrary.simpleMessage(
             "يرجى إدخال كلمة المرور الجديدة."),
+        "profile": MessageLookupByLibrary.simpleMessage("حسابي"),
         "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
         "save": MessageLookupByLibrary.simpleMessage(
             "احفظ منتجاتك المفضلة، واستمتع بعملية شراء آمنة، واحصل على منتجات يدوية بكل سهولة."),
+        "search": MessageLookupByLibrary.simpleMessage("البحث"),
         "shopWithConfidence":
             MessageLookupByLibrary.simpleMessage("تسوّق بثقة"),
         "signUp": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
@@ -76,6 +80,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "اسم المستخدم أو البريد الإلكتروني"),
         "verify": MessageLookupByLibrary.simpleMessage("تأكيد"),
         "verifyCode": MessageLookupByLibrary.simpleMessage("رمز التحقق"),
-        "welcomeBack": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك")
+        "welcomeBack": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك"),
+        "wishlist": MessageLookupByLibrary.simpleMessage("المفضلة")
       };
 }

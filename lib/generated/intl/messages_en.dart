@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
+        "cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("Confirm Password"),
         "crave": MessageLookupByLibrary.simpleMessage(
@@ -43,6 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forgot Password?"),
         "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
         "google": MessageLookupByLibrary.simpleMessage("Google"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
         "iAmBuyer": MessageLookupByLibrary.simpleMessage("I am a Buyer"),
         "iAmSeller": MessageLookupByLibrary.simpleMessage("I am a Seller"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
@@ -59,9 +61,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please enter the code we have just sent to your phone."),
         "pleaseWrite": MessageLookupByLibrary.simpleMessage(
             "Please enter your new password."),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "resendCode": MessageLookupByLibrary.simpleMessage("Resend Code"),
         "save": MessageLookupByLibrary.simpleMessage(
             "Save your favorites, enjoy secure checkout, and receive handmade products with ease."),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
         "shopWithConfidence":
             MessageLookupByLibrary.simpleMessage("Shop with Confidence"),
         "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
@@ -72,6 +76,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Username or Email"),
         "verify": MessageLookupByLibrary.simpleMessage("Verify"),
         "verifyCode": MessageLookupByLibrary.simpleMessage("Verify Code"),
-        "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back")
+        "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
+        "wishlist": MessageLookupByLibrary.simpleMessage("Wishlist")
       };
 }
