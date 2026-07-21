@@ -7,6 +7,7 @@ import 'package:hand_made/features/auth/presentation/bloc/resetpassword/cubit/re
 import 'package:hand_made/features/auth/presentation/screens/login_view.dart';
 import 'package:hand_made/features/auth/presentation/screens/register_view.dart';
 import 'package:hand_made/features/auth/presentation/screens/reset_password_view.dart';
+import 'package:hand_made/features/home/presentation/views/home_screen_layout.dart';
 import 'package:hand_made/features/onboarding/presentation/screens/first_screen.dart';
 import 'package:hand_made/features/onboarding/presentation/screens/onboarding_screen_view.dart';
 import 'package:hand_made/features/otp/presentation/cubit/cubit/otp_cubit.dart';
@@ -58,10 +59,10 @@ class AppRouter {
       //     builder: (_) => const ResetPasswordScreen(),
       //   );
 
-      // case Routes.home:
-      //   return MaterialPageRoute(
-      //     builder: (_) => const HomeScreen(),
-      //   );
+      case Routes.home:
+        return MaterialPageRoute(
+          builder: (_) => const HomeScreenLayout(),
+        );
 
       // case Routes.profile:
       //   return MaterialPageRoute(

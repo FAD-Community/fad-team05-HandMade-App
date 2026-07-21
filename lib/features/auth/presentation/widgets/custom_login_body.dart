@@ -2,11 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hand_made/core/constants/app_colors.dart';
-import 'package:hand_made/core/constants/app_string.dart';
 import 'package:hand_made/features/auth/presentation/bloc/login/login_cubit.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_background_container.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_container_forground.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_login_column.dart';
+import 'package:hand_made/generated/l10n.dart';
 
 class CustomLoginBody extends StatelessWidget {
   const CustomLoginBody({super.key});
@@ -20,7 +20,7 @@ class CustomLoginBody extends StatelessWidget {
         key: cubit.formKey,
         child: Column(
           children: [
-            CustomBackgroundContainer(text: AppString.welcomBack),
+            CustomBackgroundContainer(text: S.of(context).welcomeBack),
             CustomContainerForground(
               child: CustomLoginColumn(),
             ),
