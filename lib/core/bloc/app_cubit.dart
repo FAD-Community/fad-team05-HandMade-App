@@ -5,9 +5,7 @@ import 'package:hand_made/config/cache/cache_helper.dart';
 class AppState {
   final Locale locale;
   final ThemeMode themeMode;
-
   AppState({required this.locale, required this.themeMode});
-
   AppState copyWith({Locale? locale, ThemeMode? themeMode}) {
     return AppState(
       locale: locale ?? this.locale,
@@ -15,30 +13,31 @@ class AppState {
     );
   }
 }
-
+class CacheKeys {
+  static const language = 'language_code';
+  static const theme = 'is_dark_mode';
+}
 class AppCubit extends Cubit<AppState> {
   static const String _languageKey = 'language_code';
   static const String _themeKey = 'is_dark_mode';
-
-  AppCubit() : super(AppState(locale: const Locale('en'), themeMode: ThemeMode.light)) {
+  AppCubit()
+    : super(AppState(locale: const Locale('en'), themeMode: ThemeMode.light)) {
     _loadSettings();
   }
-
   void _loadSettings() {
-    final String languageCode = CacheHelper.getData(_languageKey) ?? 'en';
-    final bool isDarkMode = CacheHelper.getData(_themeKey) ?? false;
-
-    emit(AppState(
-      locale: Locale(languageCode),
-      themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
-    ));
+    final String languageCode = CacheHelper.getData(CacheKeys.language) ?? 'en';
+    final bool isDarkMode = CacheHelper.getData(CacheKeys.theme) ?? false;
+    emit(
+      AppState(
+        locale: Locale(languageCode),
+        themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
+      ),
+    );
   }
-
   Future<void> changeLanguage(String languageCode) async {
     await CacheHelper.saveData(key: _languageKey, value: languageCode);
     emit(state.copyWith(locale: Locale(languageCode)));
   }
-
   Future<void> toggleTheme(bool isDark) async {
     await CacheHelper.saveData(key: _themeKey, value: isDark);
     emit(state.copyWith(themeMode: isDark ? ThemeMode.dark : ThemeMode.light));
