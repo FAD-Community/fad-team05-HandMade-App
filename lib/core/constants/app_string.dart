@@ -50,4 +50,8 @@ class AppString {
       "Please enter the code we\n have just sent to your phone";
   static const pleaseWrite = "Please write your new password ";
   static const newPassword = "New Password";
+
+
+
+
 }
