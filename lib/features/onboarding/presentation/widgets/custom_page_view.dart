@@ -21,6 +21,7 @@ class _CustomPageViewState extends State<CustomPageView> {
 
   @override
   Widget build(BuildContext context) {
+      final onboardingList = getOnboardingList(context);
     return PageView.builder(
       controller: widget.controller,
       itemCount: onboardingList.length,

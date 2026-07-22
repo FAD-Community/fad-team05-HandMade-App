@@ -18,6 +18,7 @@ class _OnboardingPageviewState extends State<OnboardingPageview> {
 
   @override
   Widget build(BuildContext context) {
+      final onboardingList = getOnboardingList(context);
     return Scaffold(
       body: SafeArea(
         child: Padding(

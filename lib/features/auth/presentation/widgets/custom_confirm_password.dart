@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hand_made/core/constants/app_string.dart';
 import 'package:hand_made/core/errors/validator/validotar.dart';
 import 'package:hand_made/core/widgets/custom_text_field.dart';
+import 'package:hand_made/generated/l10n.dart';
 
 class CustomConfirmPasswordField extends StatelessWidget {
   const CustomConfirmPasswordField({
@@ -16,7 +16,7 @@ class CustomConfirmPasswordField extends StatelessWidget {
   final VoidCallback onToggle;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {final s = S.of(context);
     return CustomTextField(
       validator: (value){
           return Validator.validateConfirmPassword(
@@ -25,8 +25,8 @@ class CustomConfirmPasswordField extends StatelessWidget {
   );
       },
       myController: passwordController,
-      hint: AppString.confirmPassword,
-      label: AppString.confirmPassword,
+      hint: s.confirmPassword,
+      label: s.confirmPassword,
       prefixIcon: Icons.lock_outline,
       obscureText: isHidden,
       suffixIcon: IconButton(

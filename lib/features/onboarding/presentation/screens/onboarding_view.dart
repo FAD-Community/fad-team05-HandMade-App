@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hand_made/core/constants/app_colors.dart';
-import 'package:hand_made/core/constants/app_string.dart';
 import 'package:hand_made/core/constants/app_text_style.dart';
 import 'package:hand_made/core/spacing/media_query_helper.dart';
 import 'package:hand_made/core/widgets/coustom_button_primary.dart';
 import 'package:hand_made/features/onboarding/presentation/widgets/custom_text_onboarding.dart';
 import 'package:hand_made/features/onboarding/presentation/widgets/custum_onboarding_image.dart';
+import 'package:hand_made/generated/l10n.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({
@@ -24,13 +24,14 @@ class OnboardingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
     return SafeArea(
       child: CustomScrollView(
         clipBehavior: Clip.none,
         slivers: [
           SliverToBoxAdapter(
             child: CoustomButtonPrimary(
-              text: AppString.skip,
+              text: s.skip,
               ontap: onSkip,
               h: .02.sh,
               w: .05.sw,

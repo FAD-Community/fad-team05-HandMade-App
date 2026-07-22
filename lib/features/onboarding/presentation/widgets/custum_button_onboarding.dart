@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hand_made/core/constants/app_string.dart';
 import 'package:hand_made/core/routing/routes.dart';
 import 'package:hand_made/core/widgets/custom_button.dart';
+import 'package:hand_made/generated/l10n.dart';
 
 class CustumButtonOnboarding extends StatelessWidget {
   const CustumButtonOnboarding({
@@ -17,9 +17,10 @@ class CustumButtonOnboarding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
     String buttonText = currentIndex == length - 1
-        ? AppString.getstarted
-        : AppString.next;
+        ? s.getStarted
+        : s.next;
     return CustomButton(
       text: buttonText,
       onPressed: () {

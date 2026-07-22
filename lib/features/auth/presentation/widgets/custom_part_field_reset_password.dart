@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hand_made/core/constants/app_string.dart';
+
 import 'package:hand_made/core/errors/validator/validotar.dart';
 import 'package:hand_made/features/auth/presentation/bloc/resetpassword/cubit/resetpassword_cubit.dart';
 import 'package:hand_made/core/widgets/custom_text_field.dart';
+import 'package:hand_made/generated/l10n.dart';
 
 class CustomResetPasswordFields extends StatelessWidget {
   const CustomResetPasswordFields({super.key});
@@ -12,6 +13,7 @@ class CustomResetPasswordFields extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<ResetPasswordCubit, ResetPasswordState>(
       builder: (context, state) {
+        final s = S.of(context);
         final cubit = context.read<ResetPasswordCubit>();
         return Column(
           children: [
@@ -26,8 +28,8 @@ class CustomResetPasswordFields extends StatelessWidget {
                       : Icons.visibility_outlined,
                 ),
               ),
-              label: AppString.password,
-              hint: AppString.password,
+              label: s.password,
+              hint: s.password,
               obscureText: cubit.isPasswordHidden,
               myController: cubit.passwordController,
             ),
@@ -48,8 +50,8 @@ class CustomResetPasswordFields extends StatelessWidget {
                       : Icons.visibility_outlined,
                 ),
               ),
-              label: AppString.confirmPassword,
-              hint: AppString.confirmPassword,
+              label: s.confirmPassword,
+              hint: s.confirmPassword,
               obscureText: cubit.isConfirmPasswordHidden,
               myController: cubit.confirmPasswordController,
             ),
