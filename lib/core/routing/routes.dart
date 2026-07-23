@@ -11,7 +11,7 @@ abstract final class Routes {
   static const String resetPassword = '/reset-password';
 
   // Main
-  static const String home = '/home';
+  static const String home = '/homeLayout';
   static const String profile = '/profile';
   static const String settings = '/settings';
 
@@ -32,4 +32,5 @@ abstract final class Routes {
 
   // Notifications
   static const String notifications = '/notifications';
+
 }

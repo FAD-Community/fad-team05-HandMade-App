@@ -17,7 +17,7 @@ class CustomLoginColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cubit = context.read<LoginCubit>();
+    // final cubit = context.read<LoginCubit>();
     return Column(
       children: [
         BlocBuilder<LoginCubit, LoginState>(
@@ -45,7 +45,8 @@ class CustomLoginColumn extends StatelessWidget {
         CustomSectionTwoContainer(
           text: AppString.login,
           onPressed: () {
-            cubit.login();
+            // cubit.login();
+            Navigator.pushNamed(context, Routes.home);
           },
         ),
         SizedBox(height: MediaQueryHelper.height(context, 0.02)),
