@@ -16,4 +16,8 @@ class AppColors {
   static const Color facebookBlue = Color(0xFF1877F2);
   static const Color white = Color(0xFFffffff);
   static const Color darkSlate = Color(0xFF4E5153);
+  static const Color goodmornigText = Color(0xff7D6A61);
+  static const Color userNameColor = Color(0xFF392113);
+  static const Color homeScreenBgColor = Color(0xffFFFDFC);
+  static const Color lightBorderColor = Color(0xFFE9DDD4);
 }
