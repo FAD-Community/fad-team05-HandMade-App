@@ -1,23 +1,27 @@
-import 'package:hand_made/core/constants/app_string.dart';
+import 'package:flutter/material.dart';
+
 import 'package:hand_made/core/constants/assets.dart';
 import 'package:hand_made/features/onboarding/models/onboarding_model.dart';
+import 'package:hand_made/generated/l10n.dart';
 
-final List<OnboardingModel> onboardingList = [
-  OnboardingModel(
-    image: Assets.imagesOnboardingOnboarding1,
-    title: AppString.discoverHandmade,
-    description: AppString.explore,
-  ),
+List<OnboardingModel> getOnboardingList(BuildContext context) {
+  final s = S.of(context);
 
-  OnboardingModel(
-    image: Assets.imagesOnboardingOnboarding2,
-    title: AppString.supportCreators,
-    description: AppString.follow,
-  ),
-
-  OnboardingModel(
-    image: Assets.imagesOnboardingOnboarding3,
-    title: AppString.shopwithConfidence,
-    description: AppString.save,
-  ),
-];
+  return [
+    OnboardingModel(
+      image: Assets.imagesOnboardingOnboarding1,
+      title: s.discoverHandmade,
+      description: s.explore,
+    ),
+    OnboardingModel(
+      image: Assets.imagesOnboardingOnboarding2,
+      title: s.supportCreators,
+      description: s.follow,
+    ),
+    OnboardingModel(
+      image: Assets.imagesOnboardingOnboarding3,
+      title: s.shopWithConfidence,
+      description: s.save,
+    ),
+  ];
+}

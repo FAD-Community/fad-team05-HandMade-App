@@ -25,6 +25,7 @@ class _OnboardingScreenviewState extends State<OnboardingScreenview> {
 
   @override
   Widget build(BuildContext context) {
+      final onboardingList = getOnboardingList(context);
     return Scaffold(
       body: SafeArea(
         child: Column(
