@@ -41,7 +41,6 @@ class MyApp extends StatelessWidget {
               ],
               supportedLocales: S.delegate.supportedLocales,
               debugShowCheckedModeBanner: false,
-              initialRoute: Routes.home,
               onGenerateRoute: AppRouter.generateRoute,
             ),
           );

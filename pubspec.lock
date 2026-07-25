@@ -114,7 +114,7 @@ packages:
     source: hosted
     version: "3.0.4"
   build_runner:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: build_runner
       sha256: b1c7d812e9dd647d8dec0dc1041ec549f7bc2270d60cd1f8ec13f206c10227f8
@@ -518,7 +518,7 @@ packages:
     source: hosted
     version: "3.2.3"
   freezed_annotation:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: freezed_annotation
       sha256: "7294967ff0a6d98638e7acb774aac3af2550777accd8149c90af5b014e6d44d8"
@@ -910,7 +910,7 @@ packages:
     source: hosted
     version: "1.0.5"
   pubspec_generator:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: pubspec_generator
       sha256: "937cc8713f6a7f9d2878bc5a623375a2ea53ecded699867ee6d658ace3027eeb"

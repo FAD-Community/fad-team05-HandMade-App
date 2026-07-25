@@ -13,13 +13,13 @@ class AppState {
     );
   }
 }
+
 class CacheKeys {
   static const language = 'language_code';
   static const theme = 'is_dark_mode';
 }
+
 class AppCubit extends Cubit<AppState> {
-  static const String _languageKey = 'language_code';
-  static const String _themeKey = 'is_dark_mode';
   AppCubit()
     : super(AppState(locale: const Locale('en'), themeMode: ThemeMode.light)) {
     _loadSettings();
@@ -34,12 +34,14 @@ class AppCubit extends Cubit<AppState> {
       ),
     );
   }
+
   Future<void> changeLanguage(String languageCode) async {
-    await CacheHelper.saveData(key: _languageKey, value: languageCode);
+    await CacheHelper.saveData(key: CacheKeys.language, value: languageCode);
     emit(state.copyWith(locale: Locale(languageCode)));
   }
+
   Future<void> toggleTheme(bool isDark) async {
-    await CacheHelper.saveData(key: _themeKey, value: isDark);
+    await CacheHelper.saveData(key: CacheKeys.theme, value: isDark);
     emit(state.copyWith(themeMode: isDark ? ThemeMode.dark : ThemeMode.light));
   }
 }
