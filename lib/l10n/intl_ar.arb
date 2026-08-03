@@ -45,5 +45,9 @@
   "settings": "الإعدادات",
   "language": "اللغة",
   "darkMode": "الوضع الداكن",
-  "searchHInt": "ابحث في المنتجات اليدوية..."
+  "searchHInt": "ابحث في المنتجات اليدوية...",
+  "followAction": "متابعة",
+  "jewelry": "مجوهرات",
+  "addToCart": "أضف إلى السلة",
+  "followbtn": "متابعة"
 }

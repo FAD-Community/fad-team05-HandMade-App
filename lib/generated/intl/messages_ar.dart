@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "addToCart": MessageLookupByLibrary.simpleMessage("أضف إلى السلة"),
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "لديك حساب بالفعل؟",
     ),
@@ -51,12 +52,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "follow": MessageLookupByLibrary.simpleMessage(
       "تابع الحرفيين المفضلين لديك، وتعرّف على أعمالهم، وادعم المشاريع الصغيرة.",
     ),
+    "followAction": MessageLookupByLibrary.simpleMessage("متابعة"),
+    "followbtn": MessageLookupByLibrary.simpleMessage("متابعة"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
     "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
     "google": MessageLookupByLibrary.simpleMessage("جوجل"),
     "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
     "iAmBuyer": MessageLookupByLibrary.simpleMessage("أنا مشتري"),
     "iAmSeller": MessageLookupByLibrary.simpleMessage("أنا بائع"),
+    "jewelry": MessageLookupByLibrary.simpleMessage("مجوهرات"),
     "language": MessageLookupByLibrary.simpleMessage("اللغة"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "newPassword": MessageLookupByLibrary.simpleMessage("كلمة المرور الجديدة"),

@@ -45,5 +45,9 @@
   "settings": "Settings",
   "language": "Language",
   "darkMode": "Dark Mode",
-  "searchHInt": "Search handmade products..."
+  "searchHInt": "Search handmade products...",
+  "followAction": "Follow",
+  "jewelry": "Jewelry",
+  "addToCart": "Add to Cart",
+  "followbtn": "Follow"
 }
