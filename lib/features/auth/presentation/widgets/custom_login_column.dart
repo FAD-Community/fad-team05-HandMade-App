@@ -10,18 +10,18 @@ import 'package:hand_made/features/auth/presentation/widgets/custom_divider.dart
 import 'package:hand_made/features/auth/presentation/widgets/custom_section_three_container.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_section_one_container.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_section_two_container.dart';
-import 'package:hand_made/generated/l10n.dart';
+
+import 'package:hand_made/l10n/app_localizations.dart';
 
 class CustomLoginColumn extends StatelessWidget {
   const CustomLoginColumn({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final s = S.of(context);
-    // final cubit = context.read<LoginCubit>();
+    final s = AppLocalizations.of(context)!;
+    final cubit = context.read<LoginCubit>();
     return SingleChildScrollView(
       child: Column(
-        
         children: [
           SizedBox(height: MediaQueryHelper.height(context, 0.01)),
           BlocBuilder<LoginCubit, LoginState>(
@@ -49,7 +49,7 @@ class CustomLoginColumn extends StatelessWidget {
           CustomSectionTwoContainer(
             text: s.login,
             onPressed: () {
-              // cubit.login();
+              cubit.login();
               Navigator.pushNamed(context, Routes.home);
             },
           ),
@@ -57,9 +57,9 @@ class CustomLoginColumn extends StatelessWidget {
           CustomSectionThreeContainer(
             text: s.signUp,
             ontap: () {
-              // if (cubit.formKey.currentState!.validate()) {
-              //   cubit.login();
-              // }
+              if (cubit.formKey.currentState!.validate()) {
+                cubit.login();
+              }
               Navigator.pushNamed(context, Routes.register);
             },
           ),

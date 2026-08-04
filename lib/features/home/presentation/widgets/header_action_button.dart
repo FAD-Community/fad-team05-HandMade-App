@@ -5,10 +5,10 @@ import 'package:hand_made/core/constants/app_colors.dart';
 class HeaderActionButton extends StatelessWidget {
   final String? imagePath;
   final IconData? icon;
-  final int badgeCount;
+  final int pageCount;
   final VoidCallback? onTap;
 
-  const HeaderActionButton({super.key, this.imagePath, this.icon, this.badgeCount = 0, this.onTap})
+  const HeaderActionButton({super.key, this.imagePath, this.icon, this.pageCount = 0, this.onTap})
       : assert(imagePath != null || icon != null);
 
   @override
@@ -31,12 +31,12 @@ class HeaderActionButton extends StatelessWidget {
                 ? Image.asset(imagePath!, width: 20.w, height: 20.w)
                 : Icon(icon, size: 20.w, color: AppColors.userNameColor),
           ),
-          if (badgeCount > 0)
+          if (pageCount > 0)
             Positioned(
               right: -2, top: -2,
               child: CircleAvatar(
                 radius: 8.r, backgroundColor: AppColors.primary,
-                child: Text('$badgeCount', style: const TextStyle(color: Colors.white, fontSize: 10)),
+                child: Text('$pageCount', style: const TextStyle(color: Colors.white, fontSize: 10)),
               ),
             ),
         ],

@@ -5,7 +5,7 @@ class AppColors {
   static const Color warmNude = Color(0xffF1E7E1);
   static const Color darkBrown = Color(0xff4A2A18);
   static const Color grey = Color(0xff99A1AF);
-  static const Color whiteweak = Color(0xffFCFAF9);
+  static const Color offWhite = Color(0xFFFCFAF9);
   static const Color warmCream = Color(0xFFF0E3DC);
   static const Color semiTransparentBlack = Color(0xD9000000);
   static const Color softIvory = Color(0xFFFFFBF8);
@@ -20,4 +20,16 @@ class AppColors {
   static const Color userNameColor = Color(0xFF392113);
   static const Color homeScreenBgColor = Color(0xffFFFDFC);
   static const Color lightBorderColor = Color(0xFFE9DDD4);
+  static const Color gold = Color(0xffFBBF24);
+  // Overlay
+  static const Color imageOverlay = Color(0x66000000);
+  static const Color imageOverlayDark = Color(0x99000000);
+  // Shadow
+  static const Color shadow = Color(0x1A000000);
+  // Card
+  static const Color cardBackground = Color(0xFFFFFFFF);
+  // Border
+  static const Color categoryBorder = Color(0xFFF2E8E2);
+  // Optional
+  static const Color transparent = Colors.transparent;
 }

@@ -1,8 +1,9 @@
+
 import 'package:flutter/material.dart';
 import 'package:hand_made/core/errors/validator/validotar.dart';
 import 'package:hand_made/core/spacing/media_query_helper.dart';
 import 'package:hand_made/core/widgets/custom_text_field.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
 
 class CustomSectionOneContainer extends StatelessWidget {
   const CustomSectionOneContainer({
@@ -20,11 +21,17 @@ class CustomSectionOneContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final s = S.of(context);
+    final s = AppLocalizations.of(context)!;
     return Column(
       children: [
         CustomTextField(
-          validator: Validator.validateEmail,
+          validator: (value) {
+            return Validator.validateEmail(
+              value,
+              s.usernameOrEmail,
+              s.invalidEmail,
+            );
+          },
           myController: emailController,
           hint: s.usernameOrEmail,
           label: s.emailAddress,
@@ -33,7 +40,13 @@ class CustomSectionOneContainer extends StatelessWidget {
         ),
         SizedBox(height: MediaQueryHelper.height(context, 0.034)),
         CustomTextField(
-          validator: Validator.validatePassword,
+          validator: (value) {
+            return Validator.validatePassword(
+              value,
+              s.passwordRequired,
+              s.passwordLength,
+            );
+          },
           myController: passwordController,
           hint: s.password,
           label: s.password,

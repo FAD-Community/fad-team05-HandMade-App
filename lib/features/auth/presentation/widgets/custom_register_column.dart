@@ -9,13 +9,13 @@ import 'package:hand_made/features/auth/presentation/widgets/custom_divider.dart
 import 'package:hand_made/features/auth/presentation/widgets/custom_section_one_container.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_section_three_container.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_section_two_container.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
 
 class CustomRegisterColumn extends StatelessWidget {
   const CustomRegisterColumn({super.key});
 
   @override
-  Widget build(BuildContext context) {final s = S.of(context);
+  Widget build(BuildContext context) { final s = AppLocalizations.of(context)!;
     final cubit = context.read<RegisterCubit>();
     return SingleChildScrollView(
       child: Column(

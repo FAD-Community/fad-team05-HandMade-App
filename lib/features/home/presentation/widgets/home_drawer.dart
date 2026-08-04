@@ -3,13 +3,15 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hand_made/core/bloc/app_cubit.dart';
 import 'package:hand_made/core/constants/app_colors.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
+
 
 class HomeDrawer extends StatelessWidget {
   const HomeDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
+     final s = AppLocalizations.of(context)!;
     return Drawer(
       child: SafeArea(
         child: Column(
@@ -17,7 +19,7 @@ class HomeDrawer extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(16.w),
               child: Text(
-                S.of(context).settings,
+                s.settings,
                 style: TextStyle(
                   fontSize: 20.sp,
                   fontWeight: FontWeight.bold,
@@ -30,7 +32,7 @@ class HomeDrawer extends StatelessWidget {
                 return ListTile(
                   leading: const Icon(Icons.language, color: AppColors.primary),
                   title: Text(
-                    S.of(context).language,
+                    s.language,
                     style: TextStyle(fontSize: 16.sp),
                   ),
                   trailing: DropdownButton<String>(
@@ -57,7 +59,7 @@ class HomeDrawer extends StatelessWidget {
                     color: AppColors.primary,
                   ),
                   title: Text(
-                    S.of(context).darkMode,
+                    s.darkMode,
                     style: TextStyle(fontSize: 16.sp),
                   ),
                   trailing: Switch(

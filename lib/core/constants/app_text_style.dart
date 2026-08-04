@@ -24,7 +24,7 @@ class AppTextStyle {
     fontSize: 16,
     fontFamily: "Poppins",
     fontWeight: FontWeight.w500,
-    color: AppColors.whiteweak,
+    color: AppColors.offWhite,
   );
   static const TextStyle font12greypoppinssemiweight400 = TextStyle(
     fontSize: 12,

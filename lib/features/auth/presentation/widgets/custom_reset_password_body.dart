@@ -6,7 +6,8 @@ import 'package:hand_made/core/widgets/custom_button.dart';
 import 'package:hand_made/features/auth/presentation/bloc/resetpassword/cubit/resetpassword_cubit.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_part_field_reset_password.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_part_reset_password.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
+
 
 class CustomResetPasswordBody extends StatelessWidget {
 
@@ -14,7 +15,7 @@ class CustomResetPasswordBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final s = S.of(context);
+ final s = AppLocalizations.of(context)!;
     final cubit = context.read<ResetPasswordCubit>();
     return SafeArea(
       child: Padding(
@@ -25,7 +26,7 @@ class CustomResetPasswordBody extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CustomPartResetPassword(),
-              SizedBox(height: 22.h),
+              SizedBox(height: 30.h),
               CustomResetPasswordFields(),
               SizedBox(height: 30.h),
               CustomButton(
@@ -34,7 +35,7 @@ class CustomResetPasswordBody extends StatelessWidget {
                   if (cubit.formKey.currentState!.validate()) {
                     // reset password
                   }
-                },
+                }, width: double.infinity, height: 50.h,
               ),
             ],
           ),

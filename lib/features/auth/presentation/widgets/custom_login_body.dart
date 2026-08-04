@@ -6,7 +6,7 @@ import 'package:hand_made/features/auth/presentation/bloc/login/login_cubit.dart
 import 'package:hand_made/features/auth/presentation/widgets/custom_background_container.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_container_forground.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_login_column.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
 
 class CustomLoginBody extends StatelessWidget {
   const CustomLoginBody({super.key});
@@ -20,10 +20,10 @@ class CustomLoginBody extends StatelessWidget {
         key: cubit.formKey,
         child: Column(
           children: [
-            CustomBackgroundContainer(text: S.of(context).welcomeBack),
-            CustomContainerForground(
-              child: CustomLoginColumn(),
+            CustomBackgroundContainer(
+              text: AppLocalizations.of(context)!.welcomeBack,
             ),
+            CustomContainerForground(child: CustomLoginColumn()),
           ],
         ),
       ),

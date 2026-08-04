@@ -6,7 +6,8 @@ import 'package:hand_made/core/spacing/media_query_helper.dart';
 import 'package:hand_made/core/widgets/coustom_button_primary.dart';
 import 'package:hand_made/features/onboarding/presentation/widgets/custom_text_onboarding.dart';
 import 'package:hand_made/features/onboarding/presentation/widgets/custum_onboarding_image.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
+
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({
@@ -24,7 +25,7 @@ class OnboardingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final s = S.of(context);
+ final s = AppLocalizations.of(context)!;
     return SafeArea(
       child: CustomScrollView(
         clipBehavior: Clip.none,

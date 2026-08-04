@@ -4,7 +4,8 @@ import 'package:hand_made/core/constants/app_colors.dart';
 import 'package:hand_made/core/constants/app_text_style.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_back_button.dart';
 import 'package:hand_made/features/onboarding/presentation/widgets/custom_text_onboarding.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
+
 
 class CustomAppBarOtp extends StatelessWidget
     implements PreferredSizeWidget {
@@ -15,7 +16,7 @@ class CustomAppBarOtp extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
-    final s = S.of(context);
+ final s = AppLocalizations.of(context)!;
 
     return AppBar(
       backgroundColor: Colors.transparent,

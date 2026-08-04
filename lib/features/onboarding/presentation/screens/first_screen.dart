@@ -7,14 +7,15 @@ import 'package:hand_made/core/spacing/media_query_helper.dart';
 import 'package:hand_made/features/onboarding/presentation/widgets/custom_first_image.dart';
 import 'package:hand_made/features/onboarding/presentation/widgets/custom_icon_style.dart';
 import 'package:hand_made/features/onboarding/presentation/widgets/custum_container.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
+
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final s = S.of(context);
+ final s = AppLocalizations.of(context)!;
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 10.w),

@@ -59,6 +59,10 @@ dependencies:
   freezed_annotation: ^3.1.0
   build_runner: ^2.7.2
   pubspec_generator: ^5.0.2
+  flutter_slidable: ^4.0.3
+  get_it: ^9.2.1
+  uuid: ^4.6.0
+  intl_utils: ^2.8.14
 
 dev_dependencies:
   flutter_test:
@@ -86,6 +90,7 @@ flutter:
     - assets/images/
     - assets/images/splash/
     - assets/images/onboarding/
+    - assets/images/search/
 
   fonts:
     - family: Poppins
@@ -104,5 +109,4 @@ flutter_assets:
   output_path: lib/core/constants/
   filename: assets.dart
   field_prefix: null
-flutter_intl:
-  enabled: true
+

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
+
 
 List<BottomNavigationBarItem> getNavItems(BuildContext context) {
-  final s = S.of(context);
+ final s = AppLocalizations.of(context)!;
   return [
     BottomNavigationBarItem(
       icon: const Icon(Icons.home_outlined),

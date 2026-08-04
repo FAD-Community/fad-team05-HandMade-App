@@ -6,6 +6,7 @@ import 'package:hand_made/features/home/presentation/widgets/nav_bar_item.dart';
 import 'package:hand_made/core/widgets/custom_search_bar.dart';
 import 'package:hand_made/features/home/presentation/widgets/featured_collection_section.dart';
 import 'package:hand_made/features/home/presentation/widgets/home_drawer.dart';
+import 'package:hand_made/features/search/presentation/screens/searrch_view_screen.dart';
 
 class HomeScreenLayout extends StatefulWidget {
   const HomeScreenLayout({super.key});
@@ -37,7 +38,7 @@ class _HomeScreenLayoutState extends State<HomeScreenLayout> {
         ),
       ],
     ),
-    const Center(child: Text('Search')),
+    const SearrchViewScreen(),
     const Center(child: Text('Cart')),
     const Center(child: Text('Wishlist')),
     const Center(child: Text('Profile')),

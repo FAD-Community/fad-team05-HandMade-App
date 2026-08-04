@@ -16,6 +16,7 @@ class CustomOtpField extends StatelessWidget {
   final Function(String)? onCompleted;
 
 
+
   @override
   Widget build(BuildContext context) {
 

@@ -1,43 +1,50 @@
 class Validator {
-
-  static String? validatePassword(String? value) {
+  static String? validatePassword(
+    String? value,
+    String requiredMessage,
+    String lengthMessage,
+  ) {
     if (value == null || value.isEmpty) {
-      return "Password is required";
+      return requiredMessage;
     }
 
     if (value.length < 8) {
-      return "Password must be at least 8 characters";
+      return lengthMessage;
     }
 
     return null;
   }
-
 
   static String? validateConfirmPassword(
     String? value,
     String password,
+    String requiredMessage,
+    String matchMessage,
   ) {
     if (value == null || value.isEmpty) {
-      return "Confirm password is required";
+      return requiredMessage;
     }
 
     if (value != password) {
-      return "Passwords do not match";
+      return matchMessage;
     }
 
     return null;
   }
 
-
-  static String? validateEmail(String? value) {
-    if (value == null || value.isEmpty) {
-      return "Email is required";
+  static String? validateEmail(
+    String? value,
+    String requiredMessage,
+    String invalidMessage,
+  ) {
+    if (value == null || value.trim().isEmpty) {
+      return requiredMessage;
     }
 
-    if (!RegExp(
-      r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$',
-    ).hasMatch(value)) {
-      return "Enter valid email";
+    final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+
+    if (!emailRegex.hasMatch(value.trim())) {
+      return invalidMessage;
     }
 
     return null;

@@ -7,14 +7,14 @@ import 'package:hand_made/core/spacing/media_query_helper.dart';
 import 'package:hand_made/core/widgets/custom_button.dart';
 import 'package:hand_made/core/widgets/custom_text_auth.dart';
 import 'package:hand_made/features/onboarding/presentation/widgets/custom_text_onboarding.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
 
 class CustomUnderOtpField extends StatelessWidget {
   const CustomUnderOtpField({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final s = S.of(context);
+ final s = AppLocalizations.of(context)!;
     return Column(
       children: [
         CustomTextAuth(text: s.doNotReceiveOtp),
@@ -31,7 +31,7 @@ class CustomUnderOtpField extends StatelessWidget {
           ),
         ),
         SizedBox(height: MediaQueryHelper.height(context, 0.02)),
-        CustomButton(text: s.verify, onPressed: () {}),
+        CustomButton(text: s.verify, onPressed: () {}, width: double.infinity, height:  50.h,),
       ],
     );
   }
