@@ -10,7 +10,6 @@ class WishlistScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = WishlistDummyData.dummyItems;
-
     return SafeArea(
       child: Column(
         children: [
