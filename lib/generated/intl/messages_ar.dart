@@ -20,12 +20,19 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
+  static String m0(int days) => "تم الحفظ منذ ${days} أيام";
+
+  static String m1(int count) => "${count} عناصر محفوظة";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "add": MessageLookupByLibrary.simpleMessage("إضافة"),
+    "addAll": MessageLookupByLibrary.simpleMessage("إضافة الكل"),
     "addToCart": MessageLookupByLibrary.simpleMessage("أضف إلى السلة"),
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "لديك حساب بالفعل؟",
     ),
+    "bestSeller": MessageLookupByLibrary.simpleMessage("الأكثر مبيعاً"),
     "cart": MessageLookupByLibrary.simpleMessage("السلة"),
     "confirmPassword": MessageLookupByLibrary.simpleMessage(
       "تأكيد كلمة المرور",
@@ -60,9 +67,17 @@ class MessageLookup extends MessageLookupByLibrary {
     "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
     "iAmBuyer": MessageLookupByLibrary.simpleMessage("أنا مشتري"),
     "iAmSeller": MessageLookupByLibrary.simpleMessage("أنا بائع"),
+    "inCartCapital": MessageLookupByLibrary.simpleMessage("في السلة"),
     "jewelry": MessageLookupByLibrary.simpleMessage("مجوهرات"),
     "language": MessageLookupByLibrary.simpleMessage("اللغة"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+    "miraHandcraft": MessageLookupByLibrary.simpleMessage(
+      "ميرا للأعمال اليدوية",
+    ),
+    "moonstoneStackingRings": MessageLookupByLibrary.simpleMessage(
+      "خواتم حجر القمر",
+    ),
+    "myWishlist": MessageLookupByLibrary.simpleMessage("قائمتي المفضلة"),
     "newPassword": MessageLookupByLibrary.simpleMessage("كلمة المرور الجديدة"),
     "next": MessageLookupByLibrary.simpleMessage("التالي"),
     "orLogin": MessageLookupByLibrary.simpleMessage("أو سجل الدخول باستخدام"),
@@ -83,21 +98,27 @@ class MessageLookup extends MessageLookupByLibrary {
     "save": MessageLookupByLibrary.simpleMessage(
       "احفظ منتجاتك المفضلة، واستمتع بعملية شراء آمنة، واحصل على منتجات يدوية بكل سهولة.",
     ),
+    "savedCapital": MessageLookupByLibrary.simpleMessage("محفوظ"),
+    "savedDaysAgo": m0,
+    "savedItems": m1,
     "search": MessageLookupByLibrary.simpleMessage("البحث"),
     "searchHInt": MessageLookupByLibrary.simpleMessage(
       "ابحث في المنتجات اليدوية...",
     ),
     "seeAll": MessageLookupByLibrary.simpleMessage("عرض الكل"),
+    "select": MessageLookupByLibrary.simpleMessage("تحديد"),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
     "shopWithConfidence": MessageLookupByLibrary.simpleMessage("تسوّق بثقة"),
     "signUp": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
     "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "supportCreators": MessageLookupByLibrary.simpleMessage("ادعم الحرفيين"),
+    "totalCapital": MessageLookupByLibrary.simpleMessage("المجموع"),
     "usernameOrEmail": MessageLookupByLibrary.simpleMessage(
       "اسم المستخدم أو البريد الإلكتروني",
     ),
     "verify": MessageLookupByLibrary.simpleMessage("تأكيد"),
     "verifyCode": MessageLookupByLibrary.simpleMessage("رمز التحقق"),
+    "view": MessageLookupByLibrary.simpleMessage("عرض"),
     "welcomeBack": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك"),
     "wishlist": MessageLookupByLibrary.simpleMessage("المفضلة"),
   };

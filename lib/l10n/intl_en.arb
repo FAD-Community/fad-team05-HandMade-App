@@ -49,5 +49,18 @@
   "followAction": "Follow",
   "jewelry": "Jewelry",
   "addToCart": "Add to Cart",
-  "followbtn": "Follow"
+  "followbtn": "Follow",
+  "myWishlist": "My Wishlist",
+  "savedItems": "{count} saved items",
+  "select": "Select",
+  "savedCapital": "SAVED",
+  "inCartCapital": "IN CART",
+  "totalCapital": "TOTAL",
+  "addAll": "Add All",
+  "bestSeller": "Best Seller",
+  "add": "Add",
+  "savedDaysAgo": "Saved {days} days ago",
+  "view": "View",
+  "moonstoneStackingRings": "Moonstone Stacking Rings",
+  "miraHandcraft": "Mira Handcraft"
 }

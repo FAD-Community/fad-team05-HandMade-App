@@ -49,5 +49,18 @@
   "followAction": "متابعة",
   "jewelry": "مجوهرات",
   "addToCart": "أضف إلى السلة",
-  "followbtn": "متابعة"
+  "followbtn": "متابعة",
+  "myWishlist": "قائمتي المفضلة",
+  "savedItems": "{count} عناصر محفوظة",
+  "select": "تحديد",
+  "savedCapital": "محفوظ",
+  "inCartCapital": "في السلة",
+  "totalCapital": "المجموع",
+  "addAll": "إضافة الكل",
+  "bestSeller": "الأكثر مبيعاً",
+  "add": "إضافة",
+  "savedDaysAgo": "تم الحفظ منذ {days} أيام",
+  "view": "عرض",
+  "moonstoneStackingRings": "خواتم حجر القمر",
+  "miraHandcraft": "ميرا للأعمال اليدوية"
 }
