@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hand_made/config/cache/cache_helper.dart';
 import 'package:hand_made/core/routing/routes.dart';
 import 'package:hand_made/features/splash/presentation/widgets/coustomsplashbody.dart';
 
@@ -14,10 +15,11 @@ class _SplashViewState extends State<SplashView> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 2), () {
+      bool hasSeenOnboarding = CacheHelper.getData('onboarding') ?? false;
       Navigator.pushReplacementNamed(
         // ignore: use_build_context_synchronously
         context,
-        Routes.onboarding,
+        hasSeenOnboarding ? Routes.firstScreen : Routes.onboarding,
       );
     });
   }

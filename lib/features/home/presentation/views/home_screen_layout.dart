@@ -6,6 +6,8 @@ import 'package:hand_made/features/home/presentation/widgets/nav_bar_item.dart';
 import 'package:hand_made/core/widgets/custom_search_bar.dart';
 import 'package:hand_made/features/home/presentation/widgets/featured_collection_section.dart';
 import 'package:hand_made/features/home/presentation/widgets/home_drawer.dart';
+import 'package:hand_made/features/home/presentation/widgets/product_list_section.dart';
+import 'package:hand_made/features/wishlist/ui/screens/wishlist_screen.dart';
 
 class HomeScreenLayout extends StatefulWidget {
   const HomeScreenLayout({super.key});
@@ -30,6 +32,7 @@ class _HomeScreenLayoutState extends State<HomeScreenLayout> {
               children: [
                 CustomSearchBar(),
                 FeaturedCollectionSection(),
+                ProductListSection(),
                 // Add more sections here like "Your Feed" later
               ],
             ),
@@ -39,7 +42,7 @@ class _HomeScreenLayoutState extends State<HomeScreenLayout> {
     ),
     const Center(child: Text('Search')),
     const Center(child: Text('Cart')),
-    const Center(child: Text('Wishlist')),
+    const WishlistScreen(),
     const Center(child: Text('Profile')),
   ];
 

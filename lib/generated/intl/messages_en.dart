@@ -20,11 +20,19 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static String m0(days) => "Saved ${days} days ago";
+
+  static String m1(count) => "${count} saved items";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "add": MessageLookupByLibrary.simpleMessage("Add"),
+    "addAll": MessageLookupByLibrary.simpleMessage("Add All"),
+    "addToCart": MessageLookupByLibrary.simpleMessage("Add to Cart"),
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account?",
     ),
+    "bestSeller": MessageLookupByLibrary.simpleMessage("Best Seller"),
     "cart": MessageLookupByLibrary.simpleMessage("Cart"),
     "confirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "crave": MessageLookupByLibrary.simpleMessage(
@@ -49,14 +57,23 @@ class MessageLookup extends MessageLookupByLibrary {
     "follow": MessageLookupByLibrary.simpleMessage(
       "Follow your favorite makers, connect with their work, and support small businesses.",
     ),
+    "followAction": MessageLookupByLibrary.simpleMessage("Follow"),
+    "followbtn": MessageLookupByLibrary.simpleMessage("Follow"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
     "google": MessageLookupByLibrary.simpleMessage("Google"),
     "home": MessageLookupByLibrary.simpleMessage("Home"),
     "iAmBuyer": MessageLookupByLibrary.simpleMessage("I am a Buyer"),
     "iAmSeller": MessageLookupByLibrary.simpleMessage("I am a Seller"),
+    "inCartCapital": MessageLookupByLibrary.simpleMessage("IN CART"),
+    "jewelry": MessageLookupByLibrary.simpleMessage("Jewelry"),
     "language": MessageLookupByLibrary.simpleMessage("Language"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "miraHandcraft": MessageLookupByLibrary.simpleMessage("Mira Handcraft"),
+    "moonstoneStackingRings": MessageLookupByLibrary.simpleMessage(
+      "Moonstone Stacking Rings",
+    ),
+    "myWishlist": MessageLookupByLibrary.simpleMessage("My Wishlist"),
     "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
     "orLogin": MessageLookupByLibrary.simpleMessage("or login with"),
@@ -77,11 +94,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "save": MessageLookupByLibrary.simpleMessage(
       "Save your favorites, enjoy secure checkout, and receive handmade products with ease.",
     ),
+    "savedCapital": MessageLookupByLibrary.simpleMessage("SAVED"),
+    "savedDaysAgo": m0,
+    "savedItems": m1,
     "search": MessageLookupByLibrary.simpleMessage("Search"),
     "searchHInt": MessageLookupByLibrary.simpleMessage(
       "Search handmade products...",
     ),
     "seeAll": MessageLookupByLibrary.simpleMessage("See All"),
+    "select": MessageLookupByLibrary.simpleMessage("Select"),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "shopWithConfidence": MessageLookupByLibrary.simpleMessage(
       "Shop with Confidence",
@@ -89,11 +110,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "supportCreators": MessageLookupByLibrary.simpleMessage("Support Creators"),
+    "totalCapital": MessageLookupByLibrary.simpleMessage("TOTAL"),
     "usernameOrEmail": MessageLookupByLibrary.simpleMessage(
       "Username or Email",
     ),
     "verify": MessageLookupByLibrary.simpleMessage("Verify"),
     "verifyCode": MessageLookupByLibrary.simpleMessage("Verify Code"),
+    "view": MessageLookupByLibrary.simpleMessage("View"),
     "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
     "wishlist": MessageLookupByLibrary.simpleMessage("Wishlist"),
   };

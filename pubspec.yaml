@@ -69,6 +69,7 @@ dev_dependencies:
   pubspec_generator: ^5.0.2
   pubspec_dependency_sorter: ^1.0.5
   assets_generator: ^4.0.4+1
+  intl_utils: ^2.8.14
 
 flutter_native_splash:
   color: "#A45D36"
