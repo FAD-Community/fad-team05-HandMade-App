@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - main
+      - feature_auth
 
   pull_request:
     branches:
       - main
+      - feature_auth
 
 jobs:
   build:
