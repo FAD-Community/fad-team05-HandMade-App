@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hand_made/config/cache/cache_helper.dart';
 import 'package:hand_made/config/cache/cache_key.dart';
 import 'package:hand_made/core/routing/routes.dart';
-
 import 'package:hand_made/features/splash/presentation/widgets/coustomsplashbody.dart';
 
 class SplashView extends StatefulWidget {
@@ -19,22 +18,21 @@ class _SplashViewState extends State<SplashView> {
     checkUser();
   }
 
-  void checkUser() async{
-    Future.delayed(const Duration(seconds: 2), () {
-      final isFirstTime = CacheHelper.getData( CacheKey.isFirstTime);
-      final token = CacheHelper.getData( CacheKey.token);
+  Future<void> checkUser() async {
+    await Future.delayed(const Duration(seconds: 2));
 
-      if (isFirstTime == null || isFirstTime == true) {
-        // ignore: use_build_context_synchronously
-        Navigator.pushReplacementNamed(context, Routes.onboarding);
-      } else if (token != null) {
-        // ignore: use_build_context_synchronously
-        Navigator.pushReplacementNamed(context, Routes.home);
-      } else {
-        // ignore: use_build_context_synchronously
-        Navigator.pushReplacementNamed(context, Routes.login);
-      }
-    });
+    final bool? isFirstTime = CacheHelper.getData(CacheKey.isFirstTime);
+    final String? token = CacheHelper.getData(CacheKey.token);
+    if (isFirstTime == null) {
+      // ignore: use_build_context_synchronously
+      Navigator.pushReplacementNamed(context, Routes.onboarding);
+    } else if (token == null) {
+      // ignore: use_build_context_synchronously
+      Navigator.pushReplacementNamed(context, Routes.login);
+    } else {
+      // ignore: use_build_context_synchronously
+      Navigator.pushReplacementNamed(context, Routes.home);
+    }
   }
 
   @override

@@ -10,7 +10,6 @@ import 'package:hand_made/features/auth/presentation/widgets/custom_divider.dart
 import 'package:hand_made/features/auth/presentation/widgets/custom_section_three_container.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_section_one_container.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_section_two_container.dart';
-
 import 'package:hand_made/l10n/app_localizations.dart';
 
 class CustomLoginColumn extends StatelessWidget {
@@ -47,10 +46,10 @@ class CustomLoginColumn extends StatelessWidget {
             w: 0,
           ),
           CustomSectionTwoContainer(
-            text: s.login,
-            onPressed: () {
+            text: s.signUp,
+            onPressed: () async {
               cubit.login();
-              Navigator.pushNamed(context, Routes.home);
+              // Navigator.pushNamed(context, Routes.home);
             },
           ),
           SizedBox(height: MediaQueryHelper.height(context, 0.02)),

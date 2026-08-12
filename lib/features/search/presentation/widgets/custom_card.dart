@@ -71,7 +71,7 @@ class CustomCard extends StatelessWidget {
               trailing: SizedBox(
                 width: 95.w,
                 child: CustomButton(
-                  text: s.follow,
+                  text: s.followbtn,
                   onPressed: onFollow,
                   width: 95.w,
                   height: 25.h,

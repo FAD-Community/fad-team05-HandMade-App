@@ -18,8 +18,8 @@ dependencies:
   intl: ^0.20.2
 
   # Firebase
-  firebase_core: ^4.11.0
-  firebase_auth: ^6.5.4
+  firebase_core: ^4.13.0
+  firebase_auth: ^6.5.7
 
   # State Management
   flutter_bloc: ^9.1.1
@@ -63,6 +63,7 @@ dependencies:
   get_it: ^9.2.1
   uuid: ^4.6.0
   intl_utils: ^2.8.14
+  jiffy: ^6.4.5
 
 dev_dependencies:
   flutter_test:

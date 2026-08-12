@@ -20,6 +20,7 @@ class AppColors {
   static const Color userNameColor = Color(0xFF392113);
   static const Color homeScreenBgColor = Color(0xffFFFDFC);
   static const Color lightBorderColor = Color(0xFFE9DDD4);
+
   static const Color gold = Color(0xffFBBF24);
   // Overlay
   static const Color imageOverlay = Color(0x66000000);
@@ -32,4 +33,6 @@ class AppColors {
   static const Color categoryBorder = Color(0xFFF2E8E2);
   // Optional
   static const Color transparent = Colors.transparent;
+  static const Color discountColor = Color(0xff34D399);
+
 }

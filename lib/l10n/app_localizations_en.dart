@@ -21,25 +21,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get welcomeBack => 'Welcome Back';
 
   @override
-  String get discoverHandmade => 'Discover Handmade';
+  String get discoverHandmade => 'Discover Handmade Products';
 
   @override
   String get supportCreators => 'Support Creators';
 
   @override
-  String get shopWithConfidence => 'Shop with Confidence';
+  String get shopWithConfidence => 'Shop With Confidence';
 
   @override
   String get explore =>
-      'Explore unique handmade products crafted with care by talented local artisans.';
+      'Explore unique handmade products carefully crafted by talented artisans.';
 
   @override
-  String get followDescription =>
-      'Follow your favorite makers, connect with their work, and support small businesses.';
+  String get follow =>
+      'Follow your favorite artisans, discover their work, and support small businesses.';
 
   @override
   String get save =>
-      'Save your favorites, enjoy secure checkout, and receive handmade products with ease.';
+      'Save your favorite products, enjoy a secure shopping experience, and get handmade products easily.';
 
   @override
   String get iAmBuyer => 'I am a Buyer';
@@ -48,16 +48,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get iAmSeller => 'I am a Seller';
 
   @override
-  String get order => 'Order handmade products with ease.';
+  String get order => 'Order handmade products easily.';
 
   @override
-  String get crave => 'Find unique handmade creations you\'ll love.';
+  String get crave => 'Discover unique handmade creations you\'ll love.';
 
   @override
-  String get orLogin => 'or login with';
+  String get orLogin => 'Or login with';
 
   @override
-  String get orSignUp => 'or sign up with';
+  String get orSignUp => 'Or sign up with';
 
   @override
   String get usernameOrEmail => 'Username or Email';
@@ -93,7 +93,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get verify => 'Verify';
 
   @override
-  String get verifyCode => 'Verify Code';
+  String get verifyCode => 'Verification Code';
 
   @override
   String get resendCode => 'Resend Code';
@@ -108,7 +108,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get doNotReceiveOtp => 'Didn\'t receive the OTP?';
 
   @override
-  String get please => 'Please enter the code we have just sent to your phone.';
+  String get please => 'Please enter the code we just sent to your phone.';
 
   @override
   String get pleaseWrite => 'Please enter your new password.';
@@ -135,7 +135,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get seeAll => 'See All';
 
   @override
-  String get featuredCollection => 'Featured Collection';
+  String get featuredCollection => 'Featured Collections';
 
   @override
   String get settings => 'Settings';
@@ -147,22 +147,62 @@ class AppLocalizationsEn extends AppLocalizations {
   String get darkMode => 'Dark Mode';
 
   @override
-  String get searchHint => 'Search handmade products...';
+  String get searchHInt => 'Search handmade products...';
 
   @override
-  String get recentSearches => 'Recent Searches';
-
-  @override
-  String get clearAll => 'Clear All';
-
-  @override
-  String get popularCategories => 'Popular Categories';
-
-  @override
-  String get recommendedSellers => 'Recommended Sellers';
+  String get followAction => 'Follow';
 
   @override
   String get jewelry => 'Jewelry';
+
+  @override
+  String get addToCart => 'Add to Cart';
+
+  @override
+  String get followbtn => 'Follow';
+
+  @override
+  String get myWishlist => 'My Wishlist';
+
+  @override
+  String savedItems(Object count) {
+    return '$count Saved Items';
+  }
+
+  @override
+  String get select => 'Select';
+
+  @override
+  String get savedCapital => 'Saved';
+
+  @override
+  String get inCartCapital => 'In Cart';
+
+  @override
+  String get totalCapital => 'Total';
+
+  @override
+  String get addAll => 'Add All';
+
+  @override
+  String get bestSeller => 'Best Seller';
+
+  @override
+  String get add => 'Add';
+
+  @override
+  String savedDaysAgo(Object days) {
+    return 'Saved $days days ago';
+  }
+
+  @override
+  String get view => 'View';
+
+  @override
+  String get moonstoneStackingRings => 'Moonstone Stacking Rings';
+
+  @override
+  String get miraHandcraft => 'Mira Handcraft';
 
   @override
   String get pottery => 'Pottery';
@@ -180,13 +220,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get crochet => 'Crochet';
 
   @override
+  String get clearAll => 'Clear All';
+
+  @override
+  String get recentSearches => 'Recent Searches';
+
+  @override
+  String get popularCategories => 'Popular Categories';
+
+  @override
   String get recentlyViewed => 'Recently Viewed';
 
   @override
-  String get passwordRequired => 'Password is required';
-
-  @override
-  String get passwordLength => 'Password must be at least 8 characters';
+  String get recommendedSellers => 'Recommended Sellers';
 
   @override
   String get confirmPasswordRequired => 'Confirm password is required';
@@ -195,14 +241,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get passwordNotMatch => 'Passwords do not match';
 
   @override
-  String get emailRequired => 'Email is required';
+  String get passwordRequired => 'Password is required';
 
   @override
-  String get validEmail => 'Enter valid email';
+  String get passwordLength => 'Password must be at least 8 characters';
 
   @override
-  String get invalidEmail => 'Enter a valid email';
-
-  @override
-  String get follow => 'Follow';
+  String get invalidEmail => 'Invalid email address';
 }

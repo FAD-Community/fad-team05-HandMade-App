@@ -33,7 +33,7 @@ class CustomSearchBar extends StatelessWidget {
                   Expanded(
                     child: TextField(
                       decoration: InputDecoration(
-                        hintText: s.searchHint,
+                        hintText: s.searchHInt,
                         hintStyle: AppTextStyle.font12greypoppinssemiweight400
                             .copyWith(color: AppColors.greysoft),
                         border: InputBorder.none,

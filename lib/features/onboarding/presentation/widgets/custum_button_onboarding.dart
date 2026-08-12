@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hand_made/config/cache/cache_helper.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hand_made/config/cache/cache_key.dart';
 
 import 'package:hand_made/core/routing/routes.dart';
@@ -23,14 +23,12 @@ class CustumButtonOnboarding extends StatelessWidget {
   Widget build(BuildContext context) {
     final s = AppLocalizations.of(context)!;
     String buttonText = currentIndex == length - 1 ? s.getStarted : s.next;
+
     return CustomButton(
       text: buttonText,
-      onPressed: () async{
+      onPressed: () async {
         if (currentIndex == length - 1) {
-           await CacheHelper.saveData(
-            key: CacheKey.isFirstTime,
-            value: false,
-          );
+          await CacheHelper.saveData(key: CacheKey.isFirstTime, value: false);
           Navigator.pushReplacementNamed(
             // ignore: use_build_context_synchronously
             context,

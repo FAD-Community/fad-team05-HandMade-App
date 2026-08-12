@@ -125,7 +125,7 @@ abstract class AppLocalizations {
   /// No description provided for @discoverHandmade.
   ///
   /// In en, this message translates to:
-  /// **'Discover Handmade'**
+  /// **'Discover Handmade Products'**
   String get discoverHandmade;
 
   /// No description provided for @supportCreators.
@@ -137,25 +137,25 @@ abstract class AppLocalizations {
   /// No description provided for @shopWithConfidence.
   ///
   /// In en, this message translates to:
-  /// **'Shop with Confidence'**
+  /// **'Shop With Confidence'**
   String get shopWithConfidence;
 
   /// No description provided for @explore.
   ///
   /// In en, this message translates to:
-  /// **'Explore unique handmade products crafted with care by talented local artisans.'**
+  /// **'Explore unique handmade products carefully crafted by talented artisans.'**
   String get explore;
 
-  /// No description provided for @followDescription.
+  /// No description provided for @follow.
   ///
   /// In en, this message translates to:
-  /// **'Follow your favorite makers, connect with their work, and support small businesses.'**
-  String get followDescription;
+  /// **'Follow your favorite artisans, discover their work, and support small businesses.'**
+  String get follow;
 
   /// No description provided for @save.
   ///
   /// In en, this message translates to:
-  /// **'Save your favorites, enjoy secure checkout, and receive handmade products with ease.'**
+  /// **'Save your favorite products, enjoy a secure shopping experience, and get handmade products easily.'**
   String get save;
 
   /// No description provided for @iAmBuyer.
@@ -173,25 +173,25 @@ abstract class AppLocalizations {
   /// No description provided for @order.
   ///
   /// In en, this message translates to:
-  /// **'Order handmade products with ease.'**
+  /// **'Order handmade products easily.'**
   String get order;
 
   /// No description provided for @crave.
   ///
   /// In en, this message translates to:
-  /// **'Find unique handmade creations you\'ll love.'**
+  /// **'Discover unique handmade creations you\'ll love.'**
   String get crave;
 
   /// No description provided for @orLogin.
   ///
   /// In en, this message translates to:
-  /// **'or login with'**
+  /// **'Or login with'**
   String get orLogin;
 
   /// No description provided for @orSignUp.
   ///
   /// In en, this message translates to:
-  /// **'or sign up with'**
+  /// **'Or sign up with'**
   String get orSignUp;
 
   /// No description provided for @usernameOrEmail.
@@ -263,7 +263,7 @@ abstract class AppLocalizations {
   /// No description provided for @verifyCode.
   ///
   /// In en, this message translates to:
-  /// **'Verify Code'**
+  /// **'Verification Code'**
   String get verifyCode;
 
   /// No description provided for @resendCode.
@@ -293,7 +293,7 @@ abstract class AppLocalizations {
   /// No description provided for @please.
   ///
   /// In en, this message translates to:
-  /// **'Please enter the code we have just sent to your phone.'**
+  /// **'Please enter the code we just sent to your phone.'**
   String get please;
 
   /// No description provided for @pleaseWrite.
@@ -347,7 +347,7 @@ abstract class AppLocalizations {
   /// No description provided for @featuredCollection.
   ///
   /// In en, this message translates to:
-  /// **'Featured Collection'**
+  /// **'Featured Collections'**
   String get featuredCollection;
 
   /// No description provided for @settings.
@@ -368,41 +368,113 @@ abstract class AppLocalizations {
   /// **'Dark Mode'**
   String get darkMode;
 
-  /// No description provided for @searchHint.
+  /// No description provided for @searchHInt.
   ///
   /// In en, this message translates to:
   /// **'Search handmade products...'**
-  String get searchHint;
+  String get searchHInt;
 
-  /// No description provided for @recentSearches.
+  /// No description provided for @followAction.
   ///
   /// In en, this message translates to:
-  /// **'Recent Searches'**
-  String get recentSearches;
-
-  /// No description provided for @clearAll.
-  ///
-  /// In en, this message translates to:
-  /// **'Clear All'**
-  String get clearAll;
-
-  /// No description provided for @popularCategories.
-  ///
-  /// In en, this message translates to:
-  /// **'Popular Categories'**
-  String get popularCategories;
-
-  /// No description provided for @recommendedSellers.
-  ///
-  /// In en, this message translates to:
-  /// **'Recommended Sellers'**
-  String get recommendedSellers;
+  /// **'Follow'**
+  String get followAction;
 
   /// No description provided for @jewelry.
   ///
   /// In en, this message translates to:
   /// **'Jewelry'**
   String get jewelry;
+
+  /// No description provided for @addToCart.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to Cart'**
+  String get addToCart;
+
+  /// No description provided for @followbtn.
+  ///
+  /// In en, this message translates to:
+  /// **'Follow'**
+  String get followbtn;
+
+  /// No description provided for @myWishlist.
+  ///
+  /// In en, this message translates to:
+  /// **'My Wishlist'**
+  String get myWishlist;
+
+  /// No description provided for @savedItems.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} Saved Items'**
+  String savedItems(Object count);
+
+  /// No description provided for @select.
+  ///
+  /// In en, this message translates to:
+  /// **'Select'**
+  String get select;
+
+  /// No description provided for @savedCapital.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved'**
+  String get savedCapital;
+
+  /// No description provided for @inCartCapital.
+  ///
+  /// In en, this message translates to:
+  /// **'In Cart'**
+  String get inCartCapital;
+
+  /// No description provided for @totalCapital.
+  ///
+  /// In en, this message translates to:
+  /// **'Total'**
+  String get totalCapital;
+
+  /// No description provided for @addAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Add All'**
+  String get addAll;
+
+  /// No description provided for @bestSeller.
+  ///
+  /// In en, this message translates to:
+  /// **'Best Seller'**
+  String get bestSeller;
+
+  /// No description provided for @add.
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get add;
+
+  /// No description provided for @savedDaysAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved {days} days ago'**
+  String savedDaysAgo(Object days);
+
+  /// No description provided for @view.
+  ///
+  /// In en, this message translates to:
+  /// **'View'**
+  String get view;
+
+  /// No description provided for @moonstoneStackingRings.
+  ///
+  /// In en, this message translates to:
+  /// **'Moonstone Stacking Rings'**
+  String get moonstoneStackingRings;
+
+  /// No description provided for @miraHandcraft.
+  ///
+  /// In en, this message translates to:
+  /// **'Mira Handcraft'**
+  String get miraHandcraft;
 
   /// No description provided for @pottery.
   ///
@@ -434,23 +506,35 @@ abstract class AppLocalizations {
   /// **'Crochet'**
   String get crochet;
 
+  /// No description provided for @clearAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear All'**
+  String get clearAll;
+
+  /// No description provided for @recentSearches.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent Searches'**
+  String get recentSearches;
+
+  /// No description provided for @popularCategories.
+  ///
+  /// In en, this message translates to:
+  /// **'Popular Categories'**
+  String get popularCategories;
+
   /// No description provided for @recentlyViewed.
   ///
   /// In en, this message translates to:
   /// **'Recently Viewed'**
   String get recentlyViewed;
 
-  /// No description provided for @passwordRequired.
+  /// No description provided for @recommendedSellers.
   ///
   /// In en, this message translates to:
-  /// **'Password is required'**
-  String get passwordRequired;
-
-  /// No description provided for @passwordLength.
-  ///
-  /// In en, this message translates to:
-  /// **'Password must be at least 8 characters'**
-  String get passwordLength;
+  /// **'Recommended Sellers'**
+  String get recommendedSellers;
 
   /// No description provided for @confirmPasswordRequired.
   ///
@@ -464,29 +548,23 @@ abstract class AppLocalizations {
   /// **'Passwords do not match'**
   String get passwordNotMatch;
 
-  /// No description provided for @emailRequired.
+  /// No description provided for @passwordRequired.
   ///
   /// In en, this message translates to:
-  /// **'Email is required'**
-  String get emailRequired;
+  /// **'Password is required'**
+  String get passwordRequired;
 
-  /// No description provided for @validEmail.
+  /// No description provided for @passwordLength.
   ///
   /// In en, this message translates to:
-  /// **'Enter valid email'**
-  String get validEmail;
+  /// **'Password must be at least 8 characters'**
+  String get passwordLength;
 
   /// No description provided for @invalidEmail.
   ///
   /// In en, this message translates to:
-  /// **'Enter a valid email'**
+  /// **'Invalid email address'**
   String get invalidEmail;
-
-  /// No description provided for @follow.
-  ///
-  /// In en, this message translates to:
-  /// **'Follow'**
-  String get follow;
 }
 
 class _AppLocalizationsDelegate

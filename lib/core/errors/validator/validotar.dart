@@ -40,13 +40,35 @@ class Validator {
     if (value == null || value.trim().isEmpty) {
       return requiredMessage;
     }
-
-    final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
-
-    if (!emailRegex.hasMatch(value.trim())) {
+    final email = value.trim().toLowerCase();
+    final emailRegex = RegExp(
+      r'^[a-zA-Z0-9.!#$%&*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$',
+    );
+    if (!emailRegex.hasMatch(email)) {
       return invalidMessage;
     }
-
+    final domain = email.split('@').last;
+    const validTlds = {
+      'com',
+      'net',
+      'org',
+      'edu',
+      'gov',
+      'info',
+      'biz',
+      'io',
+      'co',
+      'me',
+      'dev',
+      'app',
+      'tech',
+      'ai',
+      'eg',
+    };
+    final tld = domain.split('.').last;
+    if (!validTlds.contains(tld)) {
+      return invalidMessage;
+    }
     return null;
   }
 }

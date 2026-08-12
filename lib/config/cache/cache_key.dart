@@ -4,4 +4,5 @@ class CacheKey {
   static const String theme = 'theme';
   static const String token = 'token';
   static const String isFirstTime = 'isFirstTime';
+  static const String role = "role";
 }

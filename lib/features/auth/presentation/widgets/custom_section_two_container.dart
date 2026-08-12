@@ -19,7 +19,12 @@ class CustomSectionTwoContainer extends StatelessWidget {
     return Column(
       children: [
         SizedBox(height: MediaQueryHelper.height(context, 0.04)),
-        CustomButton(text: text, onPressed: onPressed, width: double.infinity, height:  50.h,),
+        CustomButton(
+          text: text ,
+          onPressed: onPressed,
+          width: double.infinity,
+          height: 50.h,
+        ),
       ],
     );
   }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hand_made/config/cache/cache_helper.dart';
+import 'package:hand_made/core/routing/routes.dart';
 import 'package:hand_made/features/onboarding/data/onboarding_list.dart';
 import 'package:hand_made/features/onboarding/presentation/screens/onboarding_view.dart';
 
@@ -34,11 +36,8 @@ class _CustomPageViewState extends State<CustomPageView> {
           title: onboardingList[index].title,
           description: onboardingList[index].description,
           onSkip: () {
-            widget.controller.animateToPage(
-              onboardingList.length - 1,
-              duration: Duration(milliseconds: 500),
-              curve: Curves.easeInOut,
-            );
+            CacheHelper.saveData(key: 'onboarding', value: true);
+            Navigator.pushReplacementNamed(context, Routes.firstScreen);
           },
         );
       },

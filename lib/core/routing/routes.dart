@@ -9,6 +9,7 @@ abstract final class Routes {
   static const String forgotPassword = '/forgot-password';
   static const String otp = '/otp';
   static const String resetPassword = '/reset-password';
+  static const String verifyEmail = '/verify-email';
 
   // Main
   static const String home = '/homeLayout';

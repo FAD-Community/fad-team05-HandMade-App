@@ -35,7 +35,7 @@ class CustomSearch extends StatelessWidget {
               },
               controller: context.read<SearchCubit>().searchController,
               decoration: InputDecoration(
-                hintText: s.searchHint,
+                hintText: s.searchHInt,
                 hintStyle: AppTextStyle.font12greypoppinssemiweight400.copyWith(
                   color: AppColors.greysoft,
                 ),

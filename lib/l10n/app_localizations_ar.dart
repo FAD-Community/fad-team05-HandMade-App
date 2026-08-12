@@ -27,19 +27,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String get supportCreators => 'ادعم الحرفيين';
 
   @override
-  String get shopWithConfidence => 'تسوق بثقة';
+  String get shopWithConfidence => 'تسوّق بثقة';
 
   @override
   String get explore =>
-      'استكشف منتجات يدوية فريدة صُنعت بعناية على يد حرفيين موهوبين.';
+      'اكتشف منتجات يدوية فريدة صُنعت بعناية بواسطة حرفيين موهوبين.';
 
   @override
-  String get followDescription =>
-      'تابع صُنّاعك المفضلين، وتواصل مع أعمالهم، وادعم المشاريع الصغيرة.';
+  String get follow =>
+      'تابع الحرفيين المفضلين لديك، وتعرّف على أعمالهم، وادعم المشاريع الصغيرة.';
 
   @override
   String get save =>
-      'احفظ منتجاتك المفضلة، واستمتع بدفع آمن، واستلم منتجاتك اليدوية بكل سهولة.';
+      'احفظ منتجاتك المفضلة، واستمتع بعملية شراء آمنة، واحصل على منتجات يدوية بكل سهولة.';
 
   @override
   String get iAmBuyer => 'أنا مشتري';
@@ -48,10 +48,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get iAmSeller => 'أنا بائع';
 
   @override
-  String get order => 'اطلب المنتجات اليدوية بكل سهولة.';
+  String get order => 'اطلب المنتجات اليدوية بسهولة.';
 
   @override
-  String get crave => 'اكتشف إبداعات يدوية فريدة ستنال إعجابك.';
+  String get crave => 'اكتشف إبداعات يدوية مميزة ستحبها.';
 
   @override
   String get orLogin => 'أو سجل الدخول باستخدام';
@@ -78,7 +78,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get signUp => 'إنشاء حساب';
 
   @override
-  String get forgotPassword => 'هل نسيت كلمة المرور؟';
+  String get forgotPassword => 'نسيت كلمة المرور؟';
 
   @override
   String get emailAddress => 'البريد الإلكتروني';
@@ -93,7 +93,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get verify => 'تأكيد';
 
   @override
-  String get verifyCode => 'تأكيد الرمز';
+  String get verifyCode => 'رمز التحقق';
 
   @override
   String get resendCode => 'إعادة إرسال الرمز';
@@ -129,13 +129,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get wishlist => 'المفضلة';
 
   @override
-  String get profile => 'الملف الشخصي';
+  String get profile => 'حسابي';
 
   @override
   String get seeAll => 'عرض الكل';
 
   @override
-  String get featuredCollection => 'المجموعة المميزة';
+  String get featuredCollection => 'المجموعات المميزة';
 
   @override
   String get settings => 'الإعدادات';
@@ -147,22 +147,62 @@ class AppLocalizationsAr extends AppLocalizations {
   String get darkMode => 'الوضع الداكن';
 
   @override
-  String get searchHint => 'ابحث عن منتجات يدوية...';
+  String get searchHInt => 'ابحث في المنتجات اليدوية...';
 
   @override
-  String get recentSearches => 'عمليات البحث الأخيرة';
-
-  @override
-  String get clearAll => 'مسح الكل';
-
-  @override
-  String get popularCategories => 'الفئات الشائعة';
-
-  @override
-  String get recommendedSellers => 'البائعون المقترحون';
+  String get followAction => 'متابعة';
 
   @override
   String get jewelry => 'مجوهرات';
+
+  @override
+  String get addToCart => 'أضف إلى السلة';
+
+  @override
+  String get followbtn => 'متابعة';
+
+  @override
+  String get myWishlist => 'قائمتي المفضلة';
+
+  @override
+  String savedItems(Object count) {
+    return '$count عناصر محفوظة';
+  }
+
+  @override
+  String get select => 'تحديد';
+
+  @override
+  String get savedCapital => 'محفوظ';
+
+  @override
+  String get inCartCapital => 'في السلة';
+
+  @override
+  String get totalCapital => 'المجموع';
+
+  @override
+  String get addAll => 'إضافة الكل';
+
+  @override
+  String get bestSeller => 'الأكثر مبيعاً';
+
+  @override
+  String get add => 'إضافة';
+
+  @override
+  String savedDaysAgo(Object days) {
+    return 'تم الحفظ منذ $days أيام';
+  }
+
+  @override
+  String get view => 'عرض';
+
+  @override
+  String get moonstoneStackingRings => 'خواتم حجر القمر';
+
+  @override
+  String get miraHandcraft => 'ميرا للأعمال اليدوية';
 
   @override
   String get pottery => 'فخار';
@@ -180,13 +220,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String get crochet => 'كروشيه';
 
   @override
+  String get clearAll => 'مسح الجميع';
+
+  @override
+  String get recentSearches => 'عمليات البحث الأخيرة';
+
+  @override
+  String get popularCategories => 'الفئات الشائعة';
+
+  @override
   String get recentlyViewed => 'شوهدت مؤخرًا';
 
   @override
-  String get passwordRequired => 'كلمة المرور مطلوبة';
-
-  @override
-  String get passwordLength => 'يجب أن تكون كلمة المرور 8 أحرف على الأقل';
+  String get recommendedSellers => 'البائعون المقترحون';
 
   @override
   String get confirmPasswordRequired => 'تأكيد كلمة المرور مطلوب';
@@ -195,14 +241,11 @@ class AppLocalizationsAr extends AppLocalizations {
   String get passwordNotMatch => 'كلمتا المرور غير متطابقتين';
 
   @override
-  String get emailRequired => 'البريد الإلكتروني مطلوب';
+  String get passwordRequired => 'كلمة المرور مطلوبة';
 
   @override
-  String get validEmail => 'أدخل بريدًا إلكترونيًا صحيحًا';
+  String get passwordLength => 'يجب أن تكون كلمة المرور 8 أحرف على الأقل';
 
   @override
-  String get invalidEmail => 'أدخل بريدًا إلكترونيًا صحيحًا';
-
-  @override
-  String get follow => 'متابعة';
+  String get invalidEmail => 'البريد الإلكتروني غير صالح';
 }

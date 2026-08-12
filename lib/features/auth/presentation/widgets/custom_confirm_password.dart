@@ -7,17 +7,20 @@ class CustomConfirmPasswordField extends StatelessWidget {
   const CustomConfirmPasswordField({
     super.key,
     required this.passwordController,
+    required this.confirmPasswordController,
     required this.isHidden,
     required this.onToggle,
   });
 
   final TextEditingController passwordController;
+  final TextEditingController confirmPasswordController;
   final bool isHidden;
   final VoidCallback onToggle;
 
   @override
   Widget build(BuildContext context) {
     final s = AppLocalizations.of(context)!;
+
     return CustomTextField(
       validator: (value) {
         return Validator.validateConfirmPassword(
@@ -27,14 +30,18 @@ class CustomConfirmPasswordField extends StatelessWidget {
           s.passwordNotMatch,
         );
       },
-      myController: passwordController,
+      myController: confirmPasswordController,
       hint: s.confirmPassword,
       label: s.confirmPassword,
       prefixIcon: Icons.lock_outline,
       obscureText: isHidden,
       suffixIcon: IconButton(
         onPressed: onToggle,
-        icon: Icon(isHidden ? Icons.visibility_off : Icons.visibility),
+        icon: Icon(
+          isHidden
+              ? Icons.visibility_off
+              : Icons.visibility,
+        ),
       ),
     );
   }

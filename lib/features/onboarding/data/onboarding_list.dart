@@ -17,7 +17,7 @@ List<OnboardingModel> getOnboardingList(BuildContext context) {
     OnboardingModel(
       image: Assets.imagesOnboardingOnboarding2,
       title: s.supportCreators,
-      description: s.followDescription,
+      description: s.follow,
     ),
     OnboardingModel(
       image: Assets.imagesOnboardingOnboarding3,
