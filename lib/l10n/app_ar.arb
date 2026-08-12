@@ -62,5 +62,20 @@
   "savedDaysAgo": "تم الحفظ منذ {days} أيام",
   "view": "عرض",
   "moonstoneStackingRings": "خواتم حجر القمر",
-  "miraHandcraft": "ميرا للأعمال اليدوية"
+  "miraHandcraft": "ميرا للأعمال اليدوية",
+  "pottery": "فخار",
+  "candles": "شموع",
+  "bags": "حقائب",
+  "homeDecor": "ديكور منزلي",
+  "crochet": "كروشيه",
+  "clearAll": "مسح الجميع",
+  "recentSearches": "عمليات البحث الأخيرة",
+  "popularCategories": "الفئات الشائعة",
+  "recentlyViewed": "شوهدت مؤخرًا",
+  "recommendedSellers": "البائعون المقترحون",
+  "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+  "passwordNotMatch": "كلمتا المرور غير متطابقتين",
+  "passwordRequired": "كلمة المرور مطلوبة",
+  "passwordLength": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+  "invalidEmail": "البريد الإلكتروني غير صالح"
 }

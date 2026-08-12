@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hand_made/core/constants/app_colors.dart';
 import 'package:hand_made/features/wishlist/data/models/wishlist_item_model.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
 import 'wishlist_item_image.dart';
 import 'wishlist_item_header.dart';
 import 'wishlist_item_seller_info.dart';
@@ -15,7 +15,7 @@ class WishlistItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final s = S.of(context);
+    final s = AppLocalizations.of(context)!;
     final isAr = Localizations.localeOf(context).languageCode == 'ar';
     String title = item.titleKey == 'moonstoneStackingRings'
         ? s.moonstoneStackingRings

@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hand_made/core/di/service_locator.dart';
 import 'package:hand_made/core/routing/routes.dart';
 import 'package:hand_made/features/auth/presentation/bloc/login/login_cubit.dart';
 import 'package:hand_made/features/auth/presentation/bloc/register/register_cubit.dart';
 import 'package:hand_made/features/auth/presentation/bloc/resetpassword/cubit/resetpassword_cubit.dart';
+import 'package:hand_made/features/auth/presentation/bloc/verifiy/cubit/verifiy_email_cubit.dart';
 import 'package:hand_made/features/auth/presentation/screens/login_view.dart';
 import 'package:hand_made/features/auth/presentation/screens/register_view.dart';
 import 'package:hand_made/features/auth/presentation/screens/reset_password_view.dart';
+import 'package:hand_made/features/auth/presentation/screens/verify_email_view.dart';
 import 'package:hand_made/features/home/presentation/views/home_screen_layout.dart';
 import 'package:hand_made/features/onboarding/presentation/screens/first_screen.dart';
 import 'package:hand_made/features/onboarding/presentation/screens/onboarding_screen_view.dart';
 import 'package:hand_made/features/otp/presentation/cubit/cubit/otp_cubit.dart';
 import 'package:hand_made/features/otp/presentation/screens/otp_screen_view.dart';
+import 'package:hand_made/features/search/presentation/screens/searrch_view_screen.dart';
 import 'package:hand_made/features/splash/presentation/screens/splash.dart';
 
 class AppRouter {
@@ -33,7 +37,7 @@ class AppRouter {
       case Routes.register:
         return MaterialPageRoute(
           builder: (_) => BlocProvider(
-            create: (context) => RegisterCubit(),
+            create: (context) => getIt<RegisterCubit>(),
             child: const RegisterView(),
           ),
         );
@@ -60,9 +64,7 @@ class AppRouter {
       //   );
 
       case Routes.home:
-        return MaterialPageRoute(
-          builder: (_) => const HomeScreenLayout(),
-        );
+        return MaterialPageRoute(builder: (_) => const HomeScreenLayout());
 
       // case Routes.profile:
       //   return MaterialPageRoute(
@@ -104,15 +106,20 @@ class AppRouter {
       //     builder: (_) => const WishlistScreen(),
       //   );
 
-      // case Routes.search:
-      //   return MaterialPageRoute(
-      //     builder: (_) => const SearchScreen(),
-      //   );
+      case Routes.search:
+        return MaterialPageRoute(builder: (_) => const SearrchViewScreen());
 
       // case Routes.notifications:
       //   return MaterialPageRoute(
       //     builder: (_) => const NotificationsScreen(),
       //   );
+      case Routes.verifyEmail:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => getIt<VerifyEmailCubit>(),
+            child: const VerifyEmailView(),
+          ),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) =>

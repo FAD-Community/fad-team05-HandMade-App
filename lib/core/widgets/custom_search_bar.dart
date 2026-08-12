@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hand_made/core/constants/app_colors.dart';
 import 'package:hand_made/core/constants/app_text_style.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
 
 class CustomSearchBar extends StatelessWidget {
   const CustomSearchBar({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final s = AppLocalizations.of(context)!;
     return Padding(
       padding: EdgeInsets.fromLTRB(16.w, 16.h, 16.w, 12.h),
       child: Row(
@@ -32,7 +33,7 @@ class CustomSearchBar extends StatelessWidget {
                   Expanded(
                     child: TextField(
                       decoration: InputDecoration(
-                        hintText: S.of(context).searchHInt,
+                        hintText: s.searchHInt,
                         hintStyle: AppTextStyle.font12greypoppinssemiweight400
                             .copyWith(color: AppColors.greysoft),
                         border: InputBorder.none,

@@ -6,7 +6,7 @@ import 'package:hand_made/features/auth/presentation/bloc/register/register_cubi
 import 'package:hand_made/features/auth/presentation/widgets/custom_background_container.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_container_forground.dart';
 import 'package:hand_made/features/auth/presentation/widgets/custom_register_column.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
 
 class CustomRegisterBody extends StatelessWidget {
   const CustomRegisterBody({super.key});
@@ -14,7 +14,7 @@ class CustomRegisterBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cubit = context.read<RegisterCubit>();
-final s = S.of(context);
+ final s = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.primary,
       body: Form(
@@ -26,7 +26,6 @@ final s = S.of(context);
                 Navigator.pop(context);
               },
               text: s.createAccount,
-              showBackButton: true,
             ),
             CustomContainerForground(child: CustomRegisterColumn()),
           ],

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hand_made/core/constants/app_colors.dart';
 import 'package:hand_made/core/spacing/media_query_helper.dart';
 import 'package:hand_made/features/wishlist/data/models/wishlist_item_model.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
 
 class WishlistItemImage extends StatelessWidget {
   final WishlistItemModel item;
@@ -35,7 +35,7 @@ class WishlistItemImage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Text(
-                S.of(context).bestSeller,
+                AppLocalizations.of(context)!.bestSeller,
                 style: const TextStyle(
                   color: AppColors.white,
                   fontSize: 10,

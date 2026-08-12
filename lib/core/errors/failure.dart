@@ -1,5 +1,5 @@
 // core/errors/failure.dart
-abstract class Failure {
+class Failure {
   final String message;
   const Failure({required this.message});
 }

@@ -10,7 +10,7 @@ class CustomContainerForground extends StatelessWidget {
     return Expanded(
       child: Container(
         decoration: BoxDecoration(
-          color: AppColors.whiteweak,
+          color: AppColors.offWhite,
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(15.r),
             topRight: Radius.circular(15.r),

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:hand_made/core/constants/app_colors.dart';
 import 'package:hand_made/features/home/presentation/widgets/home_header.dart';
 import 'package:hand_made/features/home/presentation/widgets/nav_bar_item.dart';
-
 import 'package:hand_made/core/widgets/custom_search_bar.dart';
 import 'package:hand_made/features/home/presentation/widgets/featured_collection_section.dart';
 import 'package:hand_made/features/home/presentation/widgets/home_drawer.dart';
+import 'package:hand_made/features/search/presentation/screens/searrch_view_screen.dart';
 import 'package:hand_made/features/home/presentation/widgets/product_list_section.dart';
 import 'package:hand_made/features/wishlist/ui/screens/wishlist_screen.dart';
 
@@ -40,7 +40,7 @@ class _HomeScreenLayoutState extends State<HomeScreenLayout> {
         ),
       ],
     ),
-    const Center(child: Text('Search')),
+    const SearrchViewScreen(),
     const Center(child: Text('Cart')),
     const WishlistScreen(),
     const Center(child: Text('Profile')),

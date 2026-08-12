@@ -1,8 +1,10 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:hand_made/core/constants/app_colors.dart';
 import 'package:hand_made/core/constants/app_text_style.dart';
-import 'package:hand_made/core/spacing/media_query_helper.dart';
+
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -11,22 +13,26 @@ class CustomButton extends StatelessWidget {
     required this.onPressed,
     this.backgroundColor = AppColors.primary,
     this.textColor = Colors.white,
+    required this.width,
+    required this.height,
   });
 
   final String text;
   final VoidCallback onPressed;
   final Color backgroundColor;
   final Color textColor;
+  final double width;
+  final double height;
 
   @override
   Widget build(BuildContext context) {
 
 
-    return SizedBox(
-      width: double.infinity,
-      height: 50.h,
-      child: Padding(
-        padding:  EdgeInsets.symmetric(horizontal: MediaQueryHelper.width(context, .02) ),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: SizedBox(
+        width: width  ,
+        height: height,
         child: MaterialButton(
           onPressed: onPressed,
           color: backgroundColor,
@@ -34,9 +40,11 @@ class CustomButton extends StatelessWidget {
           shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16.r),
           ),
-          child: Text(
-            text,
-            style: AppTextStyle.font16whitepoppinssemiweight500,
+          child: Center(
+            child: Text(
+              text,
+              style: AppTextStyle.font16whitepoppinssemiweight500,
+            ),
           ),
         ),
       ),

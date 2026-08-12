@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hand_made/core/constants/app_colors.dart';
 import 'package:hand_made/core/constants/app_text_style.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
+
 import 'featured_collection_card.dart';
 
 class FeaturedCollectionSection extends StatelessWidget {
@@ -10,6 +11,7 @@ class FeaturedCollectionSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+     final s = AppLocalizations.of(context)!;
     // Dummy Data
     final List<Map<String, String>> collections = [
       {
@@ -42,7 +44,7 @@ class FeaturedCollectionSection extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                S.of(context).featuredCollection,
+                s.featuredCollection,
                 style: AppTextStyle.font20darkbrownpoppinssemibold.copyWith(
                   color: AppColors.userNameColor,
                   fontSize: 18.sp,
@@ -53,7 +55,7 @@ class FeaturedCollectionSection extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      S.of(context).seeAll,
+                     s.seeAll,
                       style: AppTextStyle.font14primarypoppins.copyWith(
                         fontWeight: FontWeight.w500,
                       ),

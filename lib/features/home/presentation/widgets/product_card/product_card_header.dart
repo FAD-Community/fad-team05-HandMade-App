@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hand_made/core/constants/app_colors.dart';
 import 'package:hand_made/features/home/domain/enity/product_card_entity.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
 
 class ProductCardHeader extends StatelessWidget {
   final ProductCardEntity product;
@@ -60,7 +60,7 @@ class ProductCardHeader extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
             ),
             child: Text(
-              S.of(context).followbtn,
+              AppLocalizations.of(context)!.followbtn,
               style: const TextStyle(fontWeight: FontWeight.bold),
             ),
           ),

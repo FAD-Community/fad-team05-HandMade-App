@@ -39,6 +39,18 @@ class CustomTextField extends StatelessWidget {
           borderRadius: BorderRadius.circular(10.r),
           borderSide: BorderSide(color: AppColors.primary, width: 1),
         ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10.r),
+          borderSide: const BorderSide(color: Colors.red, width: 1),
+        ),
+
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10.r),
+          borderSide: const BorderSide(color: Colors.red, width: 1.5),
+        ),
+        errorStyle: AppTextStyle.font14primarypoppins.copyWith(
+          color: Colors.red,
+        ),
         labelText: label,
         labelStyle: AppTextStyle.font16blackpoppinssemiw500.copyWith(
           color: AppColors.grey,

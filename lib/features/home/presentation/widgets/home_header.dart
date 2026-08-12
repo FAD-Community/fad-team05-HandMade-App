@@ -23,7 +23,7 @@ class HomeHeader extends StatelessWidget {
       16.h,
     ),
     decoration: BoxDecoration(
-      color: AppColors.whiteweak,
+      color: AppColors.offWhite,
       border: Border(
         bottom: BorderSide(
           color: AppColors.lightBorderColor.withValues(alpha: 0.6),
@@ -49,7 +49,7 @@ class HomeHeader extends StatelessWidget {
         SizedBox(width: 8.w),
         HeaderActionButton(
           imagePath: 'assets/images/notification_image_icon.png',
-          badgeCount: notifications,
+          pageCount: notifications,
         ),
       ],
     ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hand_made/core/constants/app_colors.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
+
 
 class WishlistItemFooter extends StatelessWidget {
   final int savedDaysAgo;
@@ -9,7 +10,7 @@ class WishlistItemFooter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final s = S.of(context);
+    final s = AppLocalizations.of(context)!;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12.0),
       child: Row(

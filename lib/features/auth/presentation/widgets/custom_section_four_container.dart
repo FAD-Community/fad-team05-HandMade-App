@@ -6,14 +6,14 @@ import 'package:hand_made/core/constants/app_colors.dart' show AppColors;
 import 'package:hand_made/core/constants/assets.dart';
 import 'package:hand_made/core/spacing/media_query_helper.dart';
 import 'package:hand_made/features/auth/presentation/widgets/cutom_button_login_sign_in.dart';
-import 'package:hand_made/generated/l10n.dart';
+import 'package:hand_made/l10n/app_localizations.dart';
 
 class CustomSectionFourContainer extends StatelessWidget {
   const CustomSectionFourContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final s = S.of(context);
+     final s = AppLocalizations.of(context)!;
     return Column(
       children: [
         Row(
